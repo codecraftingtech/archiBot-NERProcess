@@ -13,7 +13,7 @@ para extraer entidades nombradas de un texto en español.
 2. Instalar las dependencias:
 
 ```bash
-pip install -r requeriments.txt
+pip install -r requirements.txt
 ```
 
 ### Ejecutar la API
@@ -27,15 +27,11 @@ uvicorn archivBot-NERProcess:app --host 0.0.0.0 --port 8000
 ### Probar con cURL
 
 ```bash
-curl -X POST "http://localhost:8000/ner" \
-     -H "Content-Type: application/json" \
-     -d '{"text": "Barack Obama nació en Estados Unidos"}'
+curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "Barack Obama nació en Estados Unidos"}'
 ```
 
 ```bash
-curl -X POST "http://localhost:8000/ner" \
-     -H "Content-Type: application/json" \
-     -d '{"text": "El siguiente año en el 2026 me voy a comprar un AUDI en su modelo camioneta"}'
+curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "El siguiente año en el 2026 me voy a comprar un AUDI en su modelo camioneta"}'
 ```
 
 El comando devolverá un JSON con las entidades reconocidas.
