@@ -34,4 +34,12 @@ curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d 
 curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "El siguiente año en el 2026 me voy a comprar un AUDI en su modelo camioneta"}'
 ```
 
+```bash
+curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "El pago del señor Jeason Quispe Paño deberá realizarse el 15 de julio de 2025 por un monto de 10,000.00 soles"}'
+```
+
+```bash
+curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "El señor Jeason Quispe se compromete a pagar el 15 de febrero el monto de 15000 soles al contado."}'
+```
+
 El comando devolverá un JSON con las entidades reconocidas.
