@@ -28,10 +28,10 @@ uvicorn archivBot-NERProcess:app --host 0.0.0.0 --port 8000
 
 ```bash
 curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "Barack Obama nació en Estados Unidos"}'
-```
 
-```bash
 curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "El siguiente año en el 2026 me voy a comprar un AUDI en su modelo camioneta"}'
+
+curl -X POST "http://localhost:8000/ner" -H "Content-Type: application/json" -d '{"text": "El señor Marco Quispe se compromete a pagar los primeros días de febrero el monto de 10,000 soles al contado."}'
 ```
 
 El comando devolverá un JSON con las entidades reconocidas.
