@@ -12,7 +12,8 @@ import spacy
 
 # Cargamos el modelo de spaCy para español una única vez al iniciar la app.
 # Esto evita recargarlo en cada petición y mejora el rendimiento.
-nlp = spacy.load("es_core_news_sm")
+#nlp = spacy.load("es_core_news_sm")
+nlp = spacy.load("es_model_date_money_es")
 
 # Creamos la instancia de la aplicación FastAPI.
 app = FastAPI(title="API NER en español")
