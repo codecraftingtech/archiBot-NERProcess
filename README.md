@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ### los ejemplos para entrenar el empaquetado
 3. Ejecutar el archivo 'archivBot-Trainer.py' 
 
-4. Verificar que la carpeta creada del componente entrenado este en la raiz del proyecto           'archivBot-NERProcess.py'
+4. Verificar que la carpeta creada del componente entrenado denominado 'model_date_money_es'(tambien genera un zip) este en la raiz del proyecto 'archivBot-NERProcess.py'
 
 5. Ejecutar el archivo 'ejemplo.py' para verificar la correcta creacion del componente entrenado 
    'model_date_money_es'
@@ -29,6 +29,7 @@ pip install -r requirements.txt
 6. Ejecutar el archivo que contiene la API : 'archivBot-NERProcess.py'
 
 #### ------ DESPUES DE INSTALAR EL EMPAQUETADO DEL COMPONENTE ENTRENADO EN NUESTRO SPACY !!! ------
+#### ------ VER MANUAL PARA LA INSTALACION DEL EMPAQUETADO
 
 6. Solo ejecutar el archivo que contiene la API : 'archivBot-NERProcess.py'
 
